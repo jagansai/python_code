@@ -11,7 +11,7 @@ def is_odd(num ) :
     return is_even(num) == False
 
 
-# Let's start with basisc
+#Let's start with basisc
 
 
 print( "Hello, world" )
