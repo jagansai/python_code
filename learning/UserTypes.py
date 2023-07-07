@@ -54,14 +54,14 @@ class BankAccount:
         return f"Account:{self.id}\n{self.person}\nBalance:{self.balance}\nacctype:{self.acctype}"
 
     def transfer_to(self, otherAccount, amount: int):
-        if self.balance - amount<500 and self.acctype =="non privilised":
-           print("insufficient balance") 
-        elif self.balance -amount < 0:
+        if self.balance - amount < 500 and self.acctype =="non privilised" :
+           print("insufficient balance")
+        elif self.balance - amount < 0 and self.acctype == "privilised" :
             print("insufficient balance")
         else:
            self.balance = self.balance - amount
            otherAccount.balance = otherAccount.balance + amount
-    
+
 
 # Create 2 bank accounts
 # One with balance of 2000
