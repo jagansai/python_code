@@ -42,9 +42,13 @@ class Student(Person):
     def __str__(self):
         return f"{super().__str__()}\n{self.school}"
 
+class Acctype(Enum):
+      PRIVILISED = "privilised"
+      NONPRIVILISED = "non privilised"
+      OVERDRAFT = "overdraft"
 
 class BankAccount:
-    def __init__(self, id,person:Person,balance:int,acctype:str):
+    def __init__(self, id,person:Person,balance:int,acctype:Acctype):
         self.id = id
         self.person = person
         self.balance = balance
@@ -54,9 +58,9 @@ class BankAccount:
         return f"Account:{self.id}\n{self.person}\nBalance:{self.balance}\nacctype:{self.acctype}"
 
     def transfer_to(self, otherAccount, amount: int):
-        if self.balance - amount<500 and self.acctype =="non privilised":
+        if self.balance - amount<500 and self.acctype == Acctype.NONPRIVILISED:
            print("insufficient balance") 
-        elif self.balance -amount < 0:
+        elif self.balance -amount < 0 and self.acctype == Acctype.PRIVILISED:
             print("insufficient balance")
         else:
            self.balance = self.balance - amount
@@ -91,9 +95,13 @@ print(karthik)
 
 #creating bank account
 
-id1= BankAccount("A1",Person("Aadi",22,Gender.M),2000,"privilised")
+id1= BankAccount("A1",Person("Aadi",22,Gender.M),2000,Acctype.PRIVILISED)
 
-id2 = BankAccount("A2",Person("Sudha",21,Gender.F),3000,"non privilised")
+id2 = BankAccount("A2",Person("Sudha",21,Gender.F),3000,Acctype.NONPRIVILISED)
+
+id3 = BankAccount("A3",Person("Latha",34,Gender.F),2500,Acctype.OVERDRAFT)
+
+
 
 print(id1)
 print(id2)
