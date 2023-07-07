@@ -3,7 +3,7 @@
 
 
 from enum import Enum
-from traceback import print_last
+
 
 class Gender(Enum):
     M = "Male"
@@ -65,7 +65,7 @@ class BankAccount:
         else:
            self.balance = self.balance - amount
            otherAccount.balance = otherAccount.balance + amount
-    
+
 
 # Create 2 bank accounts
 # One with balance of 2000
