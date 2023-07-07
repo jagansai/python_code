@@ -44,21 +44,24 @@ class Student(Person):
 
 
 class BankAccount:
-    def __init__(self, id,person:Person,balance:int):
+    def __init__(self, id,person:Person,balance:int,acctype:str):
         self.id = id
         self.person = person
         self.balance = balance
+        self.acctype = acctype
 
     def __str__(self):
-        return f"Account:{self.id}\n{self.person}\nBalance:{self.balance}"
+        return f"Account:{self.id}\n{self.person}\nBalance:{self.balance}\nacctype:{self.acctype}"
 
     def transfer_to(self, otherAccount, amount: int):
-        if self.balance - amount<500:
-           print("insufficient balance")
+        if self.balance - amount<500 and self.acctype =="non privilised":
+           print("insufficient balance") 
+        elif self.balance -amount < 0:
+            print("insufficient balance")
         else:
            self.balance = self.balance - amount
            otherAccount.balance = otherAccount.balance + amount
-
+    
 
 # Create 2 bank accounts
 # One with balance of 2000
@@ -88,21 +91,31 @@ print(karthik)
 
 #creating bank account
 
-id1= BankAccount("A1",Person("Aadi",22,Gender.M),2000)
+id1= BankAccount("A1",Person("Aadi",22,Gender.M),2000,"privilised")
 
-id2 = BankAccount("A2",Person("Sudha",21,Gender.F),3000)
+id2 = BankAccount("A2",Person("Sudha",21,Gender.F),3000,"non privilised")
 
 print(id1)
 print(id2)
 
 #Transfer money from id2 to id1
-print("transfering money from id2 ti id1")
-id2.transfer_to(id1,1000)
+#print("transfering money from id2 ti id1")
+#id2.transfer_to(id1,1000)
+#print(id1)
+#print(id2)
+#print("\nnow transferring 3000 from id2 to id1")
+#d2.transfer_to(id1,3000)
+
+print("\ntransfer 2000 from id1 to id2")
+id1.transfer_to(id2,2000)
 print(id1)
 print(id2)
 
-id2.transfer_to(id1,3000)
+print("\ntransfer 500 from id1 to id2")
+id1.transfer_to(id2,500)
 
 print(id1)
-print(id2)
+
+#creating 1 2 more properties previlisedAcc and Non previsedAcc
+
 
