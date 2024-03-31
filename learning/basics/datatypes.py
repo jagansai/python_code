@@ -124,10 +124,6 @@ text3 = text1 + text2
 print(f"Joining {text1} and {text2} : {text3}")
 
 for line in open("learning\\basics\\file.txt"):
-    #print(line)
-    character = line[0]
-    character = character.capitalize()
-    print(f"{character}")
-    
-
-
+    #print(line)  
+    line = line[0].capitalize()+ line[1:]
+    print(line)
