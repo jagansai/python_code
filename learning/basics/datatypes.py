@@ -106,8 +106,28 @@ print(f"The last character of '{text}' is {last_character}")
 last_character = text[-1]
 print(f"The last character of '{text}' is {last_character}")
 
+# substring of a text. Get the text between 1st and 3rd character.
+substring_text = text[0:3]
+print(f"Text between 1st and 3rd character: {substring_text}")
 
-for line in open("python_code\\learning\\basics\\file.txt"):
-    print(line)
+
+substring_text = text[1 : 4]
+print(f"Text between 2nd, 3rd and 4th character: {substring_text}")
+
+substring_text = text[1:]
+
+print(f"Text between 2nd to the end of the string of the string: {substring_text}")
+
+text1 = "T"
+text2 = "his"
+text3 = text1 + text2
+print(f"Joining {text1} and {text2} : {text3}")
+
+for line in open("learning\\basics\\file.txt"):
+    #print(line)
+    character = line[0]
+    character = character.capitalize()
+    print(f"{character}")
+    
 
 
