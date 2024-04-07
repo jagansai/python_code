@@ -127,3 +127,21 @@ for line in open("learning\\basics\\file.txt"):
     #print(line)  
     line = line[0].capitalize()+ line[1:]
     print(line)
+
+
+
+    '''
+    Make one text in Lowercase
+    Make the same text upercase
+
+    Text: hI I aM KaRtIk, i StuDy iN DpS sChOoL.
+
+    '''
+
+text = "hI I aM KaRtIk, i StuDy iN DpS sChOoL."
+
+text2 = text.lower()
+print(f"This Text:{text} is converted to lowercase:{text2}")
+
+text3 = text.upper()
+print(f"This Text:{text} is converted to uppercase:{text3}")
