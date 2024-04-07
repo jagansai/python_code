@@ -47,4 +47,9 @@ val = int(input("Enter a num: "))
 print(f"The remainder of {val} when divide by 2: {val % 2}")
 
 
+val = int(input("Enter a num  to test even or odd: "))
+if val % 2 == 0: 
+    print("This is a even number")
 
+else:
+    print("This is an odd number")  
