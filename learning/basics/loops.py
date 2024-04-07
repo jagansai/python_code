@@ -27,3 +27,35 @@ while start <= 10:
 print only even numbers less than 10 starting from 1.
 '''
 
+start = 0
+while start <10:
+    print(start)
+    start = start + 2
+
+start = 0
+times = 1
+
+ulimit = 500000
+
+import time
+start_time = time.time()
+
+
+while start <ulimit:
+    print(f" looping in {times}:{start}")
+    start = start + 3
+    times = times + 1
+print("--- %s seconds ---" % (time.time() - start_time))
+
+
+start = 0
+times  = 0
+start_time = time.time()
+while start <ulimit:
+    print(f"Looping in {times}")
+    times = times + 1
+    if start % 3 == 0:
+        print(start)
+    start = start + 1
+
+print("--- %s seconds ---" % (time.time() - start_time))
