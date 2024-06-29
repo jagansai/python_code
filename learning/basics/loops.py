@@ -24,5 +24,6 @@ while start <= 10:
     start = start + 1
 
 '''
-print only even numbers less than 10 starting from 1.
+write a while loop that skips 1 counter and loops till it is less than 20 and within the loop, it prints the number.
 '''
+start = 1
