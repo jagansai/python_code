@@ -76,3 +76,9 @@ for number in range(1, upper_limit + 1):
 '''
 Now, implement the above using while loop.
 '''
+print("Implementing the above with a while loop...")
+start = 1
+while start <= upper_limit:
+    if start % divisor == 0:
+        print(start)
+    start += 1
