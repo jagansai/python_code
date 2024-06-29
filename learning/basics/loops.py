@@ -59,3 +59,11 @@ for each of that number in the range, check if the number is perfectly divisible
 if yes, print the number.
 '''
 
+
+num = int(input("enter your range: "))
+for number in range(1, num):
+    print (number)
+    
+    if number%3 == 0:
+        print
+        
