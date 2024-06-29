@@ -57,13 +57,19 @@ get the divisor as the input.
 loop through till the range
 for each of that number in the range, check if the number is perfectly divisible by the divisor.
 if yes, print the number.
+
+Enter a number to loop through a range: 20
+Enter a number that is a divisor: 3
+[1..20]
+1: is 1 divisible by 3 ? print 1
+2: is 2 divisible by 3 ? print 2
+3: is 3 divisible by 3 ? print 3
 '''
 
+upper_limit = int(input("Enter upper limit: "))
+divisor = int(input("Enter divisor: "))
 
-num = int(input("enter your range: "))
-for number in range(1, num):
-    print (number)
-    
-    if number%3 == 0:
-        print
+for number in range(1, upper_limit + 1):
+    if number % divisor == 0:
+        print(number)
         
