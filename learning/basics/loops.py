@@ -46,4 +46,16 @@ To skip 1 number in a for loop range, we use the step = 2
 print("Printing from 1 to 10 and skipping 1 number between the numbers")
 for number in range(1, 11, 2):
     print(number)
+    
+'''
+Take input of the range of numbers between 1 to <input> and print a number that is perfectly divisible by a <input> number.
+'''
+
+'''
+get the input of a range.
+get the divisor as the input.
+loop through till the range
+for each of that number in the range, check if the number is perfectly divisible by the divisor.
+if yes, print the number.
+'''
 
