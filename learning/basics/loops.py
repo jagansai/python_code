@@ -27,3 +27,6 @@ while start <= 10:
 write a while loop that skips 1 counter and loops till it is less than 20 and within the loop, it prints the number.
 '''
 start = 1
+while start < 20:
+    print(f"{start}") 
+    start = start + 2
