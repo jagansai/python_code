@@ -73,3 +73,6 @@ for number in range(1, upper_limit + 1):
     if number % divisor == 0:
         print(number)
         
+'''
+Now, implement the above using while loop.
+'''
