@@ -30,3 +30,20 @@ start = 1
 while start < 20:
     print(f"{start}") 
     start = start + 2
+    
+'''
+A for loop will loop through a range of items. for e.g. numbers, collections.
+If you want to loop between 1 to 10, in python, we simply say 1..10
+'''
+print("Printing numbers between 1 to 10")
+for number in range(1, 11):
+    print(number)
+    
+''' 
+Range also takes another argument that handles the step. By default it is 1. 
+To skip 1 number in a for loop range, we use the step = 2
+'''
+print("Printing from 1 to 10 and skipping 1 number between the numbers")
+for number in range(1, 11, 2):
+    print(number)
+
