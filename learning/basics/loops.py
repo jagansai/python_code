@@ -82,3 +82,31 @@ while start <= upper_limit:
     if start % divisor == 0:
         print(start)
     start += 1
+    
+    
+'''
+In order to quit the loop without completing it, we need to "break" from the loop.
+This can be using a break statement.
+For e.g. in the below while loop, we just get into the loop and then break from it.
+'''
+
+print("We are about to get into a loop and then come out of it without completing the loop for 10 times")
+start = 1
+while start <= 10:
+    print("hello")
+    start = start + 1
+    break
+
+print("We are out of the loop!!!")
+
+
+'''
+Excercise: 2-Jul-2024
+loop through with start = 1 and with a upper limit of 1000.
+take an input of a number at which the loop should be break.
+meanwhile, within the loop, print the word "hello".
+10
+
+20
+1001
+'''
