@@ -110,3 +110,11 @@ meanwhile, within the loop, print the word "hello".
 20
 1001
 '''
+print("We are now in the start of a loop")
+start = 1
+upper_limit = int(input("Enter upper limit: "))
+while start <= 10:
+    print("Hello!")
+    start = start + 1
+    break
+print("We are out of the loop!")
