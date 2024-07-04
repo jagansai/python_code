@@ -110,11 +110,16 @@ meanwhile, within the loop, print the word "hello".
 20
 1001
 '''
-print("We are now in the start of a loop")
 start = 1
-upper_limit = int(input("Enter upper limit: "))
-while start <= 10:
+print ("We are now in the loop")
+upper_limit = int(input("Enter upper_limit: "))
+Loop_until = int(input("Enter Divisor: "))
+print (f"You entered the upper_limit: {upper_limit} ")
+print (f"You have entered the Divisor: {Loop_until} ")
+
+while start <= upper_limit:
     print("Hello!")
+    if start >= Loop_until: break
     start = start + 1
-    break
-print("We are out of the loop!")
+#if divisor > upper_limit == print("You have printed the divisor: "):
+  # if upper_limit > Divisor == print ("You have printed upper_limit:"):
