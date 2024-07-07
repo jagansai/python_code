@@ -34,12 +34,14 @@ print_hello(1000)
 
 
 def loop_until( upper_limit, loop_until_value ):
+    if upper_limit < loop_until_value:
+        loop_until_value = upper_limit
+        
     print(f"Upper limit:{upper_limit}\nWe are looping until:{loop_until_value}")
     start = 1
 
-    while start <= upper_limit:
-        print("Hello!")
-        if start >= loop_until_value: break
+    while start <= loop_until_value:
+        print("Hello!")       
         start = start + 1
 
 
