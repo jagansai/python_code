@@ -49,3 +49,12 @@ loop_until( 5, 3 )
 loop_until( 6, 3)
 loop_until(5, 10 )
 loop_until( -1, 10 )
+
+
+# write a method, that does not take any argument. Name it, print_even_odd()
+# inside the method, get an input from the prompt of a number
+# val = int(input("Enter number: "))
+# print if the value is even or odd.
+# i.e. if 2 is entered, print("even"). if 3 is entered , print("odd")
+# This has to be in a loop and if -1 is entered, break out the loop.
+# To loop infinitely, use the approach of ,  while ( True ): 
