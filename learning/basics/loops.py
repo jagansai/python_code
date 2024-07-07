@@ -113,13 +113,13 @@ meanwhile, within the loop, print the word "hello".
 start = 1
 print ("We are now in the loop")
 upper_limit = int(input("Enter upper_limit: "))
-Loop_until = int(input("Enter Divisor: "))
+loop_until = int(input("Enter the value for loop until: "))
 print (f"You entered the upper_limit: {upper_limit} ")
-print (f"You have entered the Divisor: {Loop_until} ")
+print (f"You are looping until: {loop_until} ")
 
 while start <= upper_limit:
     print("Hello!")
-    if start >= Loop_until: break
+    if start >= loop_until: break
     start = start + 1
-#if divisor > upper_limit == print("You have printed the divisor: "):
-  # if upper_limit > Divisor == print ("You have printed upper_limit:"):
+    
+    
