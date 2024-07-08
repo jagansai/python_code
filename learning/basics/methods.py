@@ -57,4 +57,19 @@ loop_until( -1, 10 )
 # print if the value is even or odd.
 # i.e. if 2 is entered, print("even"). if 3 is entered , print("odd")
 # This has to be in a loop and if -1 is entered, break out the loop.
-# To loop infinitely, use the approach of ,  while ( True ): 
+# To loop infinitely, use the approach of ,  while ( True ):
+
+def print_even_odd( ): # type: ignore
+   while (True):
+        val = int(input("Enter number: "))
+
+        if val == -1: break
+        if val % 2 == 0:
+                print(f"{val}, This number is even") 
+                
+        else: print(f"{val}, This number is odd")
+        
+print_even_odd()
+
+
+         
