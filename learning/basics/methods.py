@@ -72,4 +72,10 @@ def print_even_odd( ): # type: ignore
 print_even_odd()
 
 
-         
+# Write a method naming, apply_weights() with 3 arguments. Weight1, Weight2 and amount
+# you need to calculate the portion for each weight that is passed.
+# For e.g., if we call the method apply_weights( 5, 7, 840 )
+# You need to apply 5 : 7 on 840 and the print it as 
+# 5 / 12 of 840 = 350
+# 7 / 12 of 840 = 490
+
