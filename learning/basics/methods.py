@@ -61,7 +61,7 @@ loop_until( -1, 10 )
 
 def print_even_odd( ): # type: ignore
    while (True):
-        val = int(input("Enter number: "))
+        val = int(input("Enter number ( -1 to break out): "))
 
         if val == -1: break
         if val % 2 == 0:
@@ -78,4 +78,21 @@ print_even_odd()
 # You need to apply 5 : 7 on 840 and then print it as 
 # 5 / 12 of 840 = 350
 # 7 / 12 of 840 = 490
+#Reference:
+#print (f"First weight( {weight1}/{total_weight} * {value}) = {first_weight}\nSecond weight( {weight2}/{total_weight} * {value} ) = {second_weight}") 
 
+def print_weights(weight_name, weight, total_weight, value,calculated_weight ):
+    print(f"{weight_name}( {weight}/{total_weight} * {value}) = {calculated_weight}")
+
+def apply_weights(weight1, weight2,value ):  
+    total_weight = weight1 + weight2
+    first_weight  = (weight1 / total_weight) * value
+    second_weight = (weight2 / total_weight) * value
+    print_weights("First weight", weight1, total_weight, value, first_weight)        
+    print_weights("Second weight", weight2, total_weight, value, second_weight)        
+    
+
+
+apply_weights(80,40,300)
+
+# fw ( 80 / 120) * 300 = 200
