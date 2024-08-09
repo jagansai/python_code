@@ -106,3 +106,17 @@ apply_weights( 20, 80, 400 )
 # For e.g., you pass 5, then add 1 + 2 + 3 + 4 + 5 = 15
 # Print 15 at the end.
 
+def add_upto( ulimit ):
+    print(f"In the method add_upto. {ulimit} got passed to the method")
+    start = 0
+    
+    while ( ulimit > 0 ):
+        start = start + ulimit
+        ulimit = ulimit -1
+    
+    print(start)
+    
+
+add_upto(5)
+add_upto(10)
+add_upto(1000)
