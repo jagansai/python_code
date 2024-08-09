@@ -94,5 +94,15 @@ def apply_weights(weight1, weight2,value ):
 
 
 apply_weights(80,40,300)
+apply_weights( 20, 80, 400 )
 
 # fw ( 80 / 120) * 300 = 200
+
+
+# write a method to accept parameter of number.
+# This number is an upper limit.
+# For e.g., 5
+# In the method, you need to start adding from 1 to that number.
+# For e.g., you pass 5, then add 1 + 2 + 3 + 4 + 5 = 15
+# Print 15 at the end.
+
