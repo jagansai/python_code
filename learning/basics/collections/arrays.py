@@ -43,7 +43,8 @@ print(f"First in the list: {numbers[0]} and the last in the list : {numbers[-1]}
 # [1,3,2,4,5] the minimum is 1.
 # [ 4, 3, 1, 6, 2] the minimum is 1.
 # [ -1, 2, 3, 4, -5 ] the minimus is -5.
-def find_minimum(list_of_numbers):
+
+def find_minimum(list_of_numbers): # type: ignore
     # Let's assume 100000 is the maximum number.
     minimum_number = 100000
     for number in list_of_numbers:
@@ -69,5 +70,32 @@ print(f"The minimum number in {numbers} is : {minimum_number}")
 # [1,2, 4, 5, 3, 0] the maximum is 5.
 # [-1, -2, -4, -5, -6 ] the maximum is -1
 
+#Practice 26-09-2024 :/
+
+def sum_of_even_nums (list_of_nums): 
+    index = 0
+    total = 0
+    while index < len(list_of_nums):
+        if index % 2 == 0: # now this is even.
+            total = total + list_of_nums[index]
+        index = index + 1
+    return total
+
+  
+
+    
+#Examples:
+numbers = [-9]
+total = sum_of_even_nums (numbers)
+print(f"The sum of {numbers} is {total}")
+
+numbers = [-42, -5, -44]
+total = sum_of_even_nums (numbers)
+print(f"The sum of {numbers} is {total}")
+
+
+numbers = [3, 2, -3]
+total = sum_of_even_nums (numbers)
+print(f"The sum of {numbers} is {total}")
 
 
