@@ -70,5 +70,34 @@ x, *y = input("Enter values seperated by space: ").split(" ")
 
 print_values(x, y )
 
+#Exercise: Monday 30-09-2024
 
+
+def break_words(text): # type: ignore
+    return text.split()
+
+def print_first_word(text): # type: ignore
+    words = break_words(text)
+    if words:
+        print(words[0])
+
+def print_last_word(text): # type: ignore
+    words = break_words(text)
+    if words:
+        print(words[-1])
+
+def print_first_and_last_word(text): # type: ignore
+    words = break_words(text)
+    if words:
+        print(words[0], words[-1])
+
+# Example usage:
+sentence = "Karthik plays good football"
+print("Break words:", break_words(sentence))
+print("First word:", end=" ")
+print_first_word(sentence)
+print("Last word:", end=" ")
+print_last_word(sentence)
+print("First and last word:", end=" ")
+print_first_and_last_word(sentence)
 

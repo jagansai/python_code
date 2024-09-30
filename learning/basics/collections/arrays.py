@@ -97,5 +97,3 @@ print(f"The sum of {numbers} is {total}")
 numbers = [3, 2, -3]
 total = sum_of_even_nums (numbers)
 print(f"The sum of {numbers} is {total}")
-
-
