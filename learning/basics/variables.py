@@ -88,20 +88,20 @@ Methods names are
 #Exercise: Monday 30-09-2024
 
 
-def break_words(text): # type: ignore
+def break_words(text): 
     return text.split()
 
-def print_first_word(text): # type: ignore
+def print_first_word(text): 
     words = break_words(text)
     if words:
         print(words[0])
 
-def print_last_word(text): # type: ignore
+def print_last_word(text): 
     words = break_words(text)
     if words:
         print(words[-1])
 
-def print_first_and_last_word(text): # type: ignore
+def print_first_and_last_word(text): 
     words = break_words(text)
     if words:
         print(words[0], words[-1])
