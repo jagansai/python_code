@@ -70,6 +70,21 @@ x, *y = input("Enter values seperated by space: ").split(" ")
 
 print_values(x, y )
 
+
+
+'''
+Exercise: 
+Read the above lesson on how to get input from the prompt.
+Enter a sentence separated by spaces. ( For e.g., Karthik plays good football )
+
+Write different methods by passing the text ( the input that you got) to those methods.
+
+Methods names are
+1. break_words - This method should just split the passed in text by spaces. 
+2. print_first_word - As the name suggests, this method should print the first word in the sentence 
+3. print_last_word - As the name suggests, this method should print the last word in the sentence.
+4. print_first_and_last_word - As the name suggests, this method should print the first & last word in the sentence.
+'''
 #Exercise: Monday 30-09-2024
 
 
