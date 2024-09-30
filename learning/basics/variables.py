@@ -116,3 +116,20 @@ print_last_word(sentence)
 print("First and last word:", end=" ")
 print_first_and_last_word(sentence)
 
+
+'''
+In the above solution, you took the sentence as a fixed sentence.
+I am looking for something that you can input via prompt ( which is what I asked for )
+
+Can you loop through until the user enters... end
+and take that sentence entered in the prompt and do this?
+
+
+Enter the sentence: karthik likes football
+Break words: ['karthik', 'likes', 'football']
+First word: karthik
+Last word: football
+First and last word: karthik football
+Enter the sentence: end
+'''
+
