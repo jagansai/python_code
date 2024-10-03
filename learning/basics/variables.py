@@ -91,7 +91,7 @@ Methods names are
 def break_words(text): 
     return text.split()
 
-def print_first_word(text): 
+def print_first_word(text):  
     words = break_words(text)
     if words:
         print(words[0])
@@ -132,4 +132,17 @@ Last word: football
 First and last word: karthik football
 Enter the sentence: end
 '''
+
+while True:
+    sentence = input("Enter the sentence: ")
+    if "end":
+        break
+    words = sentence.split()
+    print(f"Break words: {words}")
+    if words:
+        print(f"First word: {words[0]}")
+        print(f"Last word: {words[-1]}")
+        print(f"First and last word: {words[0]} {words[-1]}")
+print()
+
 
