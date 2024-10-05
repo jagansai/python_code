@@ -135,7 +135,7 @@ Enter the sentence: end
 
 while True:
     sentence = input("Enter the sentence: ")
-    if "end":
+    if sentence.lower() == "end":
         break
     words = sentence.split()
     print(f"Break words: {words}")
