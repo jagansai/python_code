@@ -25,24 +25,4 @@ else:
     print(f"{to_search} appeared {count} times in the array.")
 
 
-    
-    
-    
 
-# 2.Write a program that prints the numbers from 1 to 50. 
-# But for multiples of 3, print "Fizz" instead of the number, and for the multiples of 5, print "Buzz". 
-# For numbers that are multiples of both 3 and 5, print "FizzBuzz".
-
-# Example output:
-# 1
-# 2
-# Fizz
-# 4
-# Buzz
-# Fizz
-# 7
-# ...
-
-# 3.Ask the user for three numbers, and write a program that prints the largest number.
-# Example input: 5, 10, 3
-# Example output: The largest number is 10
